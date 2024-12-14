@@ -41,6 +41,9 @@ safer = 0
 
 for _,safety_list in enumerate(safety_lists[0:473]):
     for idx, item in enumerate(safety_list):
+        except:
+            pass
+
         list_to_be_popped = list(safety_list)
         if check_list(list_to_be_popped.pop(idx)) == 0:
             print(f"index {_} removed {safety_list[idx]} from {safety_list} to give {list_to_be_popped}")
